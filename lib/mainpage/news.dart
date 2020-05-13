@@ -15,6 +15,8 @@ class News extends StatefulWidget {
 }
 
 class _NewsState extends State<News> {
+
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,15 +38,15 @@ class _NewsState extends State<News> {
           IconButton(
             icon: Icon(Icons.notifications,color: Colors.white,), onPressed: () {  },
           ),
-          IconButton (
-            tooltip: 'Search',
-            icon: const Icon(Icons.search,color: Colors.white,),
-            onPressed: () async{
-              final String selected = await showSearch<String>
-                (context: context,
-                  delegate: null);
-            },
-          ),
+          // IconButton (
+          //   tooltip: 'Search',
+          //   icon: const Icon(Icons.search,color: Colors.white,),
+          //   onPressed: () async{
+          //     final String selected = await showSearch<String>
+          //       (context: context,
+          //         delegate: null);
+          //   },
+          // ),
 
         ],
       ),

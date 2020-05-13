@@ -34,15 +34,15 @@ class _ActivitiesState extends State<Activities> {
       IconButton(
             icon: Icon(Icons.notifications,color: Colors.white,), onPressed: () {  },
           ),
-          IconButton (
-            tooltip: 'Search',
-            icon: const Icon(Icons.search,color: Colors.white,),
-            onPressed: () async{
-              final selected = await showSearch<String>
-                (context: context,
-                  delegate: null);
-            },
-          ),
+          // IconButton (
+          //   tooltip: 'Search',
+          //   icon: const Icon(Icons.search,color: Colors.white,),
+          //   onPressed: () async{
+          //     final selected = await showSearch<String>
+          //       (context: context,
+          //         delegate: null);
+          //   },
+          // ),
 
         ],
       ),
