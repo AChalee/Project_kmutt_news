@@ -1,6 +1,6 @@
 
 // Register module/require aliases
-// require('module-alias/register');
+require('module-alias/register');
 
 
 // Patches
@@ -15,7 +15,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 
 
-const logger = require('@util/logger');
+const logger = require('./util/logger');
 
 // Load .env Enviroment Variables to process.env
 
