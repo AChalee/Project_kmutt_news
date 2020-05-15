@@ -17,4 +17,3 @@
     }
 ]
 
-return news[1].title;

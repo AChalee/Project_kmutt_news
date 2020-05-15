@@ -1,12 +1,11 @@
 // var express = require("express");
 // var app =express();
 const status = require('http-status');
-const userModel = require('@models/data.js');
+
 
 module.exports={
 test(req,res){
-  
-  res.json({status: true, message: 'Hello World'},data);
+res.json({status: true, message: 'Hello World'});
   
 }
 }
