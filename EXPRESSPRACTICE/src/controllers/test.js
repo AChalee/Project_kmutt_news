@@ -5,9 +5,14 @@ const userModel = require('@models/data.js');
 
 module.exports={
 test(req,res){
-  res.json({status: true, message: 'Hello World',data});
+  
+  res.json({status: true, message: 'Hello World'},data);
+  
 }
 }
+
+
+
 // app("/",(req,res) =>{
 //   res.send("Hello World");
 // });
