@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Wilson",
+      "image": "assets/images/Wilson_Portrait.png",
+      "description": "Grows a magnificent beard.",
+      "gallery": [
+        "Wilson01.jpg",
+        "Wilson02.jpg",
+        "Wilson03.jpg"
+      ]
+    
+    },
+    {
+      "name" : "Willow",
+      "image" : "assets/images/Willow_Portrait.png",
+      "description": "Things are so much prettier when they burn.",
+      
+      "gallery": ["Willow01.jpg","Willow02.jpg","Willow03.jpg"]
+    }
+  ]
