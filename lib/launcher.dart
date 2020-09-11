@@ -2,15 +2,13 @@
 
 import 'dart:convert';
 
-
-
 import 'package:flutter/material.dart';
 import 'package:kmutt_news/mainpage/activies.dart';
 import 'package:kmutt_news/mainpage/follow.dart';
 import 'package:kmutt_news/mainpage/more.dart';
 import 'package:kmutt_news/mainpage/news.dart';
 
-import 'models/character_data.dart';
+import 'models/viewdata_news.dart';
 
 class Launcher extends StatefulWidget {
   static const routeName = '/';
@@ -54,7 +52,7 @@ class _LauncherState extends State<Launcher> {
 @override
 void initState() {
 super.initState();
-_loadCharacterData();
+_loadViewData();
   }
   
 
@@ -71,20 +69,27 @@ _loadCharacterData();
       ),
     );
   }
-Future _loadCharacterData() async {
+Future _loadViewData() async {
   String data = await DefaultAssetBundle.of(context)
-      .loadString("assets/json/character.json");
+      .loadString("assets/json/newsdata.json");
   final parsed = json.decode(data).cast<Map<String, dynamic>>();
 
   final jsonResult = parsed
-      .map<CharacterData>((json) => CharacterData.fromJson(json))
+      .map<ViewData>((json) => ViewData.fromJson(json))
       .toList();
 
-  print(jsonResult[0].name);
-  print(jsonResult[1].name);
-  print(jsonResult[0].description);
-  print(jsonResult[1].description);
-
+  print(jsonResult[0].id);
+  print(jsonResult[0].title);
+  print(jsonResult[0].detail);
+  print("-------------------------------------------------------------------------------------");
+  print(jsonResult[1].id);
+  print(jsonResult[1].title);
+  print(jsonResult[1].detail);
+  print("-------------------------------------------------------------------------------------");
+  print(jsonResult[2].id);
+  print(jsonResult[2].title);
+  print(jsonResult[2].detail);
+  print("-------------------------------------------------------------------------------------");
   return parsed;
 }
   

@@ -1,0 +1,34 @@
+[
+    {
+      "id": "news1",
+      "title": "มติจัดสรรงบประมาณเพื่อช่วยเหลือนักศึกษา",
+      "detail": "มจธ.ขอเป็นกำลังใจให้กับพวกเราทุกคน สภามหาวิทยาลัย เมื่อวันที่ 7 พฤษภาคม 2563 ได้มีมติให้มีการจัดสรรงบประมาณเพื่อช่วยเหลือนักศึกษาในวงเงินเพิ่มเติม",
+      "picCoverUrl": [
+        "https://www.facebook.com/KMUTT/photos/a.378041348580/10157283995308581/?type=3&theater",
+        "Wilson02.jpg",
+        "Wilson03.jpg"
+      ]
+    
+    },
+    {
+      "id" : "news2",
+      "title" : "internet unlimited",
+      "detail": "A special round of registration for unlimited mobile data package (maximum speed at 4 Mbps for 90 days)",
+      
+      "picCoverUrl": [
+        "https://www.facebook.com/KMUTT/photos/a.378041348580/10157277805763581/?type=3&theater",
+        "Willow02.jpg",
+        "Willow03.jpg"]
+    },
+    {
+      "id" : "news3",
+      "title" : "มดอาสาปันสุขในช่วงวิกฤต",
+      "detail" :"ตู้ปันสุข โดย มดอาสาปันสุขในช่วงวิกฤต COVID-19 เปิดให้บริการแล้ววันนี้ ร่วมแบ่งปันสิ่งของเครื่องใช้ อุปกรณ์ป้องกันตนเอง อาทิ เช่น เจลแอลกอฮอล์ น้ำดื่ม อาหารแห้ง อาหารกระป๋อง และสิ่งของอื่นๆ ที่จำเป็นต่อการดำรงชีวิต",
+      "picCoverUrl" :[
+        "https://www.facebook.com/KMUTT/photos/a.378041348580/10157277176558581/?type=3&theater",
+        "Willow02.jpg",
+        "Willow03.jpg"
+      ]
+
+    }
+  ]
