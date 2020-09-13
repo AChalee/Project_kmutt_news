@@ -1,4 +1,4 @@
-#Sat Sep 12 00:30:10 ICT 2020
-base.0=C\:\\Users\\anann\\OneDrive\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Mon Sep 14 02:48:33 ICT 2020
+base.0=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
