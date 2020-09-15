@@ -26,20 +26,25 @@ class _LauncherState extends State<Launcher> {
   ];
   List<BottomNavigationBarItem> _menuBar = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
-      icon: Icon(Icons.description),
-      title: Text('ข่าว'),
+      icon: Icon(Icons.new_releases),
+      title: Text(
+        'ข่าว',
+        style: TextStyle(fontSize: 14, fontFamily: 'Prompt'),
+      ),
     ),
     BottomNavigationBarItem(
       icon: Icon(Icons.calendar_today),
-      title: Text('กิจกรรม'),
+      title: Text(
+        'กิจกรรม',
+        style: TextStyle(fontSize: 14, fontFamily: 'Prompt'),
+      ),
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.add_circle_outline),
-      title: Text('ติดตาม'),
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.view_module),
-      title: Text('เพิ่มเติม'),
+      icon: Icon(Icons.menu),
+      title: Text(
+        'อื่นๆ',
+        style: TextStyle(fontSize: 14, fontFamily: 'Prompt'),
+      ),
     ),
   ];
   void _onItemTapped(int index) {

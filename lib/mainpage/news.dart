@@ -18,7 +18,10 @@ class _NewsState extends State<News> {
         title: new Text(
           'KMUTT NEWS',
           style: TextStyle(
-              fontSize: 24, color: Colors.white, fontStyle: FontStyle.italic),
+              fontSize: 24,
+              fontFamily: 'Prompt',
+              color: Colors.white,
+              fontStyle: FontStyle.italic),
         ),
         actions: <Widget>[
           IconButton(
@@ -50,13 +53,20 @@ class _NewsState extends State<News> {
               Container(
                 constraints: BoxConstraints.expand(height: 50),
                 child: TabBar(
+                  indicatorWeight: 3,
+                  indicatorColor: Colors.orange,
                   labelColor: Colors.orange,
                   unselectedLabelColor: Colors.grey,
                   tabs: [
                     Tab(
-                      text: 'ข่าวล่าสุด',
-                    ),
-                    Tab(text: 'ข่าวสารเป็นที่นิยม'),
+                        child: Text('ข่าวล่าสุด',
+                            style:
+                                TextStyle(fontSize: 17, fontFamily: 'Prompt'))),
+                    Tab(
+                        child: Text(
+                      'ข่าวสารเป็นที่นิยม',
+                      style: TextStyle(fontSize: 17, fontFamily: 'Prompt'),
+                    )),
                   ],
                 ),
               ),
@@ -71,6 +81,12 @@ class _NewsState extends State<News> {
             ],
           ),
         ),
+      ),
+      // --------------------------------------------add text------------------------------------------------------
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.border_color),
+        backgroundColor: Colors.orange,
       ),
     );
   }
