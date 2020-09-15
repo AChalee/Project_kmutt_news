@@ -1,6 +1,4 @@
-
-
-import 'dart:convert';
+// import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:kmutt_news/mainpage/activies.dart';
@@ -8,7 +6,7 @@ import 'package:kmutt_news/mainpage/follow.dart';
 import 'package:kmutt_news/mainpage/more.dart';
 import 'package:kmutt_news/mainpage/news.dart';
 
-import 'models/viewdata_news.dart';
+// import 'models/viewdata_news.dart';
 
 class Launcher extends StatefulWidget {
   static const routeName = '/';
@@ -49,12 +47,11 @@ class _LauncherState extends State<Launcher> {
       _selectedIndex = index;
     });
   }
-@override
-void initState() {
-super.initState();
-_loadViewData();
-  }
-  
+// @override
+// void initState() {
+// super.initState();
+// _loadViewData();
+//   }
 
   @override
   Widget build(BuildContext context) {
@@ -69,28 +66,28 @@ _loadViewData();
       ),
     );
   }
-Future _loadViewData() async {
-  String data = await DefaultAssetBundle.of(context)
-      .loadString("assets/json/newsdata.json");
-  final parsed = json.decode(data).cast<Map<String, dynamic>>();
+// Future _loadViewData() async {
+//   String data = await DefaultAssetBundle.of(context)
+//       .loadString("assets/json/newsdata.json");
+//   final parsed = json.decode(data).cast<Map<String, dynamic>>();
 
-  final jsonResult = parsed
-      .map<ViewData>((json) => ViewData.fromJson(json))
-      .toList();
+//   final jsonResult = parsed
+//       .map<ViewData>((json) => ViewData.fromJson(json))
+//       .toList();
 
-  print(jsonResult[0].id);
-  print(jsonResult[0].title);
-  print(jsonResult[0].detail);
-  print("-------------------------------------------------------------------------------------");
-  print(jsonResult[1].id);
-  print(jsonResult[1].title);
-  print(jsonResult[1].detail);
-  print("-------------------------------------------------------------------------------------");
-  print(jsonResult[2].id);
-  print(jsonResult[2].title);
-  print(jsonResult[2].detail);
-  print("-------------------------------------------------------------------------------------");
-  return parsed;
-}
-  
+//   print(jsonResult[0].id);
+//   print(jsonResult[0].title);
+//   print(jsonResult[0].detail);
+//   print("-------------------------------------------------------------------------------------");
+//   print(jsonResult[1].id);
+//   print(jsonResult[1].title);
+//   print(jsonResult[1].detail);
+//   print("-------------------------------------------------------------------------------------");
+//   print(jsonResult[2].id);
+//   print(jsonResult[2].title);
+//   print(jsonResult[2].detail);
+//   print("-------------------------------------------------------------------------------------");
+//   return parsed;
+// }
+
 }
