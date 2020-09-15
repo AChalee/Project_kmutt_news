@@ -9,11 +9,11 @@ class DataNews extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         child: ListView.builder(
           itemCount: 3,
-          itemBuilder: (context,index){
+          itemBuilder: (context, index) {
             return Container(
-              height: MediaQuery.of(context).size.width*0.5,
+              height: MediaQuery.of(context).size.width * 0.5,
               child: Card(
-                color: Colors.amberAccent,
+                color: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12.0),
                 ),
