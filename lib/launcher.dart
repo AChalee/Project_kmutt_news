@@ -26,14 +26,14 @@ class _LauncherState extends State<Launcher> {
   ];
   List<BottomNavigationBarItem> _menuBar = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
-      icon: Icon(Icons.new_releases),
+      icon: Icon(Icons.description),
       title: Text(
         'ข่าว',
         style: TextStyle(fontSize: 14, fontFamily: 'Prompt'),
       ),
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.calendar_today),
+      icon: Icon(Icons.event_available),
       title: Text(
         'กิจกรรม',
         style: TextStyle(fontSize: 14, fontFamily: 'Prompt'),
