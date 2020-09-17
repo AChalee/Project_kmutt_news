@@ -20,6 +20,17 @@ class _AddDataState extends State<AddData> {
               keyboardType: TextInputType.text,
               style: TextStyle(fontSize: 18),
               decoration: InputDecoration(
+                  labelText: 'เพิ่มรูปภาพ',
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10))),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            TextField(
+              keyboardType: TextInputType.text,
+              style: TextStyle(fontSize: 18),
+              decoration: InputDecoration(
                   labelText: 'ข่าวสาร/กิจกรรม',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10))),
