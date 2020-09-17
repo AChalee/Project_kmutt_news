@@ -1,3 +1,4 @@
+import 'package:dropdownfield/dropdownfield.dart';
 import 'package:flutter/material.dart';
 
 class AddData extends StatefulWidget {
@@ -34,7 +35,11 @@ class _AddDataState extends State<AddData> {
                   labelText: 'ข่าวสาร/กิจกรรม',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10))),
-            )
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            DropDownField()
           ],
         ),
       ),
