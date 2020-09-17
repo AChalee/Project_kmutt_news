@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+// import 'package:kmutt_news/subpage/addData.dart';
 import 'package:kmutt_news/tab/dataNews.dart';
 
 class News extends StatefulWidget {
@@ -84,10 +85,23 @@ class _NewsState extends State<News> {
       ),
       // --------------------------------------------add text------------------------------------------------------
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context, _AddData());
+        },
         child: Icon(Icons.border_color),
         backgroundColor: Colors.orange,
       ),
     );
   }
+}
+
+class _AddData extends MaterialPageRoute<Null> {
+  _AddData()
+      : super(builder: (BuildContext) {
+          return Scaffold(
+            appBar: AppBar(
+              title: Text('data'),
+            ),
+          );
+        });
 }
