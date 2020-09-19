@@ -1,5 +1,9 @@
-import 'package:dropdownfield/dropdownfield.dart';
+import 'dart:core';
+
+// import 'package:dropdownfield/dropdownfield.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AddData extends StatefulWidget {
   @override
@@ -7,39 +11,46 @@ class AddData extends StatefulWidget {
 }
 
 class _AddDataState extends State<AddData> {
+  double _height = 0;
   @override
   Widget build(BuildContext context) {
+    var expanded = Expanded;
     return Scaffold(
       appBar: AppBar(
         title: new Text(''),
       ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(10, 30, 20, 0.0),
+        padding: EdgeInsets.all(8.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            TextField(
-              keyboardType: TextInputType.text,
-              style: TextStyle(fontSize: 18),
-              decoration: InputDecoration(
-                  labelText: 'เพิ่มรูปภาพ',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10))),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            TextField(
-              keyboardType: TextInputType.text,
-              style: TextStyle(fontSize: 18),
-              decoration: InputDecoration(
-                  labelText: 'ข่าวสาร/กิจกรรม',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10))),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            DropDownField()
+            Expanded(
+                child: Form(
+                    child: ListView(
+              padding: EdgeInsets.all(8.0),
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'หัวข้อสาร/กิจกรรม',
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        contentPadding:
+                            EdgeInsets.only(left: 8.0, top: _height),
+                        border: OutlineInputBorder(),
+                        labelText: 'รายละเอียด'),
+                  ),
+                )
+              ],
+            ))),
           ],
         ),
       ),

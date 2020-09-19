@@ -1,4 +1,4 @@
-#Thu Sep 17 21:37:38 ICT 2020
+#Sat Sep 19 15:16:16 ICT 2020
 base.2=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex

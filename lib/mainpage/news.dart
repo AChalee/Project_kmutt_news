@@ -39,10 +39,10 @@ class _NewsState extends State<News> {
               Icons.search,
               color: Colors.white,
             ),
-            onPressed: () async {
-              final String selected =
-                  await showSearch<String>(context: context, delegate: null);
-            },
+            // onPressed: () async {
+            //   final String selected =
+            //       await showSearch<String>(context: context, delegate: null);
+            // },
           ),
         ],
       ),
