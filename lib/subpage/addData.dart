@@ -1,9 +1,9 @@
 import 'dart:core';
+import 'dart:io';
 
 // import 'package:dropdownfield/dropdownfield.dart';
 // import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 
 class AddData extends StatefulWidget {
   @override
@@ -11,7 +11,11 @@ class AddData extends StatefulWidget {
 }
 
 class _AddDataState extends State<AddData> {
+  File image;
   double _height = 0;
+
+  Future _getImage() async {}
+
   @override
   Widget build(BuildContext context) {
     var expanded = Expanded;
