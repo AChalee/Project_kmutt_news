@@ -3,4 +3,5 @@ cloud_firestore=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\
 cloud_firestore_web=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\cloud_firestore_web-0.2.0+1\\
 firebase_core=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-0.5.0\\
 firebase_core_web=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-0.2.0\\
-multi_image_picker=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\multi_image_picker-4.7.14\\
+flutter_plugin_android_lifecycle=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_plugin_android_lifecycle-1.0.9\\
+image_picker=C:\\flutter_windows_1.17.0-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\image_picker-0.6.7+8\\

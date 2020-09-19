@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kmutt_news/subpage/addData.dart';
-import 'package:kmutt_news/subpage/addData.dart';
+
 import 'package:kmutt_news/tab/dataNews.dart';
 
 class News extends StatefulWidget {
@@ -39,10 +39,9 @@ class _NewsState extends State<News> {
               Icons.search,
               color: Colors.white,
             ),
-            // onPressed: () async {
-            //   final String selected =
-            //       await showSearch<String>(context: context, delegate: null);
-            // },
+            onPressed: () {
+              print('sreach');
+            },
           ),
         ],
       ),

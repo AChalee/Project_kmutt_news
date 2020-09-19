@@ -4,6 +4,7 @@ import 'dart:io';
 // import 'package:dropdownfield/dropdownfield.dart';
 // import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AddData extends StatefulWidget {
   @override
@@ -11,53 +12,60 @@ class AddData extends StatefulWidget {
 }
 
 class _AddDataState extends State<AddData> {
-  File image;
-  double _height = 0;
+  File _image;
 
-  Future _getImage() async {}
+  Future _getImage() async {
+    // ignore: deprecated_member_use
+    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+
+    setState(() {
+      _image = image;
+      print('_image: $_image');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    var expanded = Expanded;
     return Scaffold(
-      appBar: AppBar(
-        title: new Text(''),
-      ),
-      body: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Expanded(
-                child: Form(
-                    child: ListView(
-              padding: EdgeInsets.all(8.0),
-              children: <Widget>[
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 8.0),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'หัวข้อสาร/กิจกรรม',
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 8.0),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                        contentPadding:
-                            EdgeInsets.only(left: 8.0, top: _height),
-                        border: OutlineInputBorder(),
-                        labelText: 'รายละเอียด'),
-                  ),
-                )
-              ],
-            ))),
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          actions: <Widget>[
+            GestureDetector(
+              onTap: () {},
+              child: Container(
+                padding: EdgeInsets.only(top: 17, right: 25),
+                child: Text('โพสต์',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'Prompt',
+                        color: Colors.white)),
+              ),
+            ),
           ],
         ),
-      ),
-    );
+// ------------------------------------add image-----------------------------------------------
+        body: ListView(
+          shrinkWrap: true,
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(20),
+              width: 180,
+              height: 160,
+              child: Stack(
+                children: <Widget>[
+                  Card(
+                    child: InkWell(
+                      onTap: _getImage,
+                    ),
+                  ),
+                  Center(
+                    child: IconButton(
+                        icon: Icon(Icons.add_a_photo), onPressed: () {}),
+                  )
+                ],
+              ),
+            ),
+          ],
+        ));
   }
 }
