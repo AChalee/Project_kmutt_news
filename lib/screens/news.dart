@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kmutt_news/subpage/addData.dart';
+import 'package:kmutt_news/views/addData.dart';
 
-import 'package:kmutt_news/tab/dataNews.dart';
+import 'package:kmutt_news/widgets/dataNews.dart';
 
 class News extends StatefulWidget {
   static const routeName = '/news';

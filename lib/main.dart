@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'package:kmutt_news/subpage/following.dart';
-import 'package:kmutt_news/subpage/save.dart';
+import 'package:kmutt_news/views/following.dart';
+import 'package:kmutt_news/views/save.dart';
 
 import 'launcher.dart';
 
@@ -41,12 +41,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   get json => null;
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold();
   }
-
-  
 }

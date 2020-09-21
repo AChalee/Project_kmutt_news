@@ -1,10 +1,11 @@
 // import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:kmutt_news/mainpage/activies.dart';
-import 'package:kmutt_news/mainpage/follow.dart';
-import 'package:kmutt_news/mainpage/more.dart';
-import 'package:kmutt_news/mainpage/news.dart';
+
+import 'package:kmutt_news/screens/activies.dart';
+import 'package:kmutt_news/screens/follow.dart';
+import 'package:kmutt_news/screens/more.dart';
+import 'package:kmutt_news/screens/news.dart';
 
 // import 'models/viewdata_news.dart';
 
@@ -20,6 +21,7 @@ class _LauncherState extends State<Launcher> {
   int _selectedIndex = 0;
   List<Widget> _pageWidget = <Widget>[
     News(),
+    Activities(),
     Activities(),
     Follow(),
     AddMore()

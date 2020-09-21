@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kmutt_news/tab/dataNews.dart';
-
+import 'package:kmutt_news/widgets/dataNews.dart';
 
 class TabBarNews extends StatelessWidget {
   @override
@@ -19,11 +18,12 @@ class TabBarNews extends StatelessWidget {
                   Tab(text: 'ข่าวสารเร็วๆนี้'),
                   Tab(text: 'ข่าวสารทั่วไป'),
                   Tab(text: 'ข่าวสารที่สนใจ'),
-                ],),
+                ],
+              ),
             ),
-            Expanded (
+            Expanded(
               child: Container(
-                child: TabBarView(children:[
+                child: TabBarView(children: [
                   DataNews(),
                   DataNews(),
                   DataNews(),

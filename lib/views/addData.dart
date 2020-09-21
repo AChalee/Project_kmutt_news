@@ -29,6 +29,7 @@ class _AddDataState extends State<AddData> {
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
+          leading: build(context),
           actions: <Widget>[
             GestureDetector(
               onTap: () {},
@@ -66,6 +67,8 @@ class _AddDataState extends State<AddData> {
               ),
             ),
           ],
-        ));
+        )
+        // -------------------------------add data----------------------------------------
+        );
   }
 }
