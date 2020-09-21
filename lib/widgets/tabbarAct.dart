@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kmutt_news/tab/dataAct.dart';
-
+import 'package:kmutt_news/widgets/dataAct.dart';
 
 class TabBarAct extends StatelessWidget {
   @override
@@ -19,17 +18,15 @@ class TabBarAct extends StatelessWidget {
                   Tab(text: 'กิจกรรมเร็วๆนี้'),
                   Tab(text: 'กิจกรรมทั่วไป'),
                   Tab(text: 'กิจกรรมที่สนใจ'),
-                ],),
+                ],
+              ),
             ),
             Expanded(
               child: Container(
-                child: TabBarView(children:[
+                child: TabBarView(children: [
                   DataAct(),
                   DataAct(),
                   DataAct(),
-
-
-
                 ]),
               ),
             )

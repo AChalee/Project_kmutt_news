@@ -1,13 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kmutt_news/subpage/following.dart';
-import 'package:kmutt_news/subpage/save.dart';
-
-
-
+import 'package:kmutt_news/views/following.dart';
+import 'package:kmutt_news/views/save.dart';
 
 class SideMenu extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -16,10 +12,11 @@ class SideMenu extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            accountName: Text('เกี่ยวกับผู้ใช้',style: TextStyle(
-                color: Colors.white,
-                fontSize:25
-            ),), accountEmail: null,
+            accountName: Text(
+              'เกี่ยวกับผู้ใช้',
+              style: TextStyle(color: Colors.white, fontSize: 25),
+            ),
+            accountEmail: null,
           ),
 //          ListTile(
 //            leading: Icon(Icons.lock),
@@ -39,23 +36,25 @@ class SideMenu extends StatelessWidget {
 //            },
 //
 //          ),
-          
+
           ListTile(
             leading: Icon(Icons.bookmark),
-            title: Text('บันทึก',style: TextStyle(fontSize: 17),),
-            onTap: (){
-              Navigator.pushNamed(context, Save.routeName
-              );
+            title: Text(
+              'บันทึก',
+              style: TextStyle(fontSize: 17),
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, Save.routeName);
             },
           ),
           ListTile(
             leading: Icon(Icons.person_add),
-            title: Text('กำลังติดตาม',style: TextStyle(fontSize: 17),) ,
-            onTap: (){
-              Navigator.pushNamed(
-                  context,
-                  Following.routeName
-              );
+            title: Text(
+              'กำลังติดตาม',
+              style: TextStyle(fontSize: 17),
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, Following.routeName);
             },
           ),
           Divider(),

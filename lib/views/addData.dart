@@ -14,6 +14,8 @@ class AddData extends StatefulWidget {
 class _AddDataState extends State<AddData> {
   File _image;
 
+  String name;
+
   Future _getImage() async {
     // ignore: deprecated_member_use
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
@@ -28,8 +30,6 @@ class _AddDataState extends State<AddData> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          automaticallyImplyLeading: false,
-          leading: build(context),
           actions: <Widget>[
             GestureDetector(
               onTap: () {},
@@ -48,27 +48,46 @@ class _AddDataState extends State<AddData> {
         body: ListView(
           shrinkWrap: true,
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(20),
-              width: 180,
-              height: 160,
-              child: Stack(
-                children: <Widget>[
-                  Card(
-                    child: InkWell(
-                      onTap: _getImage,
-                    ),
+            Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.all(20),
+                  width: 180,
+                  height: 160,
+                  child: Stack(
+                    children: <Widget>[
+                      Card(
+                        child: InkWell(
+                          onTap: _getImage,
+                        ),
+                      ),
+                      Center(
+                        child: IconButton(
+                            icon: Icon(Icons.add_a_photo), onPressed: () {}),
+                      )
+                    ],
                   ),
-                  Center(
-                    child: IconButton(
-                        icon: Icon(Icons.add_a_photo), onPressed: () {}),
-                  )
-                ],
-              ),
-            ),
+                ),
+                //  --------------------------------------------add data----------------------------------------------
+                Container(
+                  height: 50,
+                  width: 300,
+                  // padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: TextFormField(
+                    keyboardType: TextInputType.text,
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                      hintText: 'ข่าวสาร/กิจกรรม',
+                    ),
+                    style: TextStyle(),
+                  ),
+                )
+              ],
+            )
           ],
-        )
-        // -------------------------------add data----------------------------------------
-        );
+        ));
   }
 }
