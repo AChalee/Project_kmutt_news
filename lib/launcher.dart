@@ -1,11 +1,12 @@
 // import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:kmutt_news/screens/activities_view.dart';
 
-import 'package:kmutt_news/screens/activies.dart';
+// import 'package:kmutt_news/screens/activies.dart';
 
-import 'package:kmutt_news/screens/more.dart';
-import 'package:kmutt_news/screens/news.dart';
+import 'package:kmutt_news/screens/menu_view.dart';
+import 'package:kmutt_news/screens/news_view.dart';
 
 // import 'models/viewdata_news.dart';
 
@@ -19,7 +20,10 @@ class Launcher extends StatefulWidget {
 
 class _LauncherState extends State<Launcher> {
   int _selectedIndex = 0;
-  List<Widget> _pageWidget = <Widget>[News(), Activities(), AddMore()];
+  List<Widget> _pageWidget = <Widget>[
+    News(),
+    Activities(),
+    AddMore()];
   List<BottomNavigationBarItem> _menuBar = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
       icon: Icon(Icons.description),

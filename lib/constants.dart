@@ -7,4 +7,21 @@ const kGrey3 = Color(0XFFEAEAEA);
 const kBlack = Color(0xFF1C1C1C);
 
 var kNonActiveTabStyle =
-    GoogleFonts.prompt(textStyle: TextStyle(fontSize: 16.0, color: kGrey1));
+    GoogleFonts.prompt(textStyle: TextStyle(fontSize: 18.0, color: kGrey1));
+
+var kActiveTabStyle = GoogleFonts.prompt(
+  textStyle:
+      TextStyle(fontSize: 16.0, color: kGrey1, fontWeight: FontWeight.bold),
+);
+
+var kCategoryTitle = GoogleFonts.prompt(
+  textStyle:
+      TextStyle(fontSize: 16.0, color: kGrey2, fontWeight: FontWeight.bold),
+);
+
+var kDetailContent =
+    GoogleFonts.prompt(textStyle: TextStyle(fontSize: 16.0, color: kGrey2));
+
+var kTitleCard = GoogleFonts.prompt(
+    textStyle:
+        TextStyle(fontSize: 16.0, color: kBlack, fontWeight: FontWeight.bold));

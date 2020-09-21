@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'package:kmutt_news/views/following.dart';
-import 'package:kmutt_news/views/save.dart';
-
 import 'launcher.dart';
 
 void main() => runApp(MyApp());
@@ -23,8 +20,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/', // สามารถใช้ home แทนได้
       routes: {
         Launcher.routeName: (context) => Launcher(),
-        Save.routeName: (context) => Save(),
-        Following.routeName: (context) => Following(),
       },
     );
   }

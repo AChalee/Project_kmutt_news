@@ -12,6 +12,7 @@ class AddData extends StatefulWidget {
 }
 
 class _AddDataState extends State<AddData> {
+  TextEditingController controller = TextEditingController();
   File _image;
 
   String name;
@@ -25,6 +26,20 @@ class _AddDataState extends State<AddData> {
       print('_image: $_image');
     });
   }
+
+  @override
+  void initState() {
+    super.initState();
+    controller.text = 'Initial Value';
+  }
+  // TextField(
+  //   controller: controller,
+  //   onSubmitted: (value){
+  //     setState(() {
+  //       controller.text =value;
+  //     });
+  //   },
+  // )
 
   @override
   Widget build(BuildContext context) {
@@ -68,23 +83,7 @@ class _AddDataState extends State<AddData> {
                     ],
                   ),
                 ),
-                //  --------------------------------------------add data----------------------------------------------
-                Container(
-                  height: 50,
-                  width: 300,
-                  // padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: TextFormField(
-                    keyboardType: TextInputType.text,
-                    decoration: InputDecoration(
-                      contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                      hintText: 'ข่าวสาร/กิจกรรม',
-                    ),
-                    style: TextStyle(),
-                  ),
-                )
+                //  --------------------------------------------TextEdit----------------------------------------------
               ],
             )
           ],

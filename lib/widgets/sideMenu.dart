@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kmutt_news/views/following.dart';
-import 'package:kmutt_news/views/save.dart';
 
 class SideMenu extends StatelessWidget {
   @override
@@ -43,9 +41,7 @@ class SideMenu extends StatelessWidget {
               'บันทึก',
               style: TextStyle(fontSize: 17),
             ),
-            onTap: () {
-              Navigator.pushNamed(context, Save.routeName);
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.person_add),
@@ -53,9 +49,7 @@ class SideMenu extends StatelessWidget {
               'กำลังติดตาม',
               style: TextStyle(fontSize: 17),
             ),
-            onTap: () {
-              Navigator.pushNamed(context, Following.routeName);
-            },
+            onTap: () {},
           ),
           Divider(),
         ],
