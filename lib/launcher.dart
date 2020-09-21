@@ -19,13 +19,7 @@ class Launcher extends StatefulWidget {
 
 class _LauncherState extends State<Launcher> {
   int _selectedIndex = 0;
-  List<Widget> _pageWidget = <Widget>[
-    News(),
-    Activities(),
-    Activities(),
-    Follow(),
-    AddMore()
-  ];
+  List<Widget> _pageWidget = <Widget>[News(), Activities(), AddMore()];
   List<BottomNavigationBarItem> _menuBar = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
       icon: Icon(Icons.description),

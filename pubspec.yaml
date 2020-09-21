@@ -34,7 +34,8 @@ dependencies:
   dropdownfield: ^1.0.3
   image_picker: ^0.6.7+8
   image: ^2.1.4
-  
+  google_fonts: ^1.1.0
+  flutter_svg: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +54,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/json/
+    - assets/
     # - images/a_dot_burr.jpeg
     # - images/a_dot_ham.jpeg
 
