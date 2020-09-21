@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:kmutt_news/screens/activies.dart';
-import 'package:kmutt_news/screens/follow.dart';
+
 import 'package:kmutt_news/screens/more.dart';
 import 'package:kmutt_news/screens/news.dart';
 
