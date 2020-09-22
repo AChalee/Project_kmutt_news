@@ -10,7 +10,7 @@ class PrimaryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 300.0,
-      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 15.0),
+      padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
           border: Border.all(color: kGrey3, width: 1.0)),
