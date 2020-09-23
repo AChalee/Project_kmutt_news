@@ -12,23 +12,23 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\ACER\Project_kmutt_news\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\ACER\Project_kmutt_news\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-15-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+15-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+15-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
-16-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
+16-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+16-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:24:5-79
-17-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:24:22-76
+17-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:24:5-79
+17-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:24:22-76
 18    <uses-permission android:name="android.permission.WAKE_LOCK" />
-18-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:25:5-68
-18-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:25:22-65
+18-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:25:5-68
+18-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:25:22-65
 19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-19-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
-19-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
+19-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
 20    <!--
 21 io.flutter.app.FlutterApplication is an android.app.Application that
 22         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -37,30 +37,30 @@
 25         FlutterApplication and put your custom class here.
 26    -->
 27    <application
-27-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:8:5-46:19
+27-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:8:5-46:19
 28        android:name="io.flutter.app.FlutterApplication"
-28-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:9:9-57
+28-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:9:9-57
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3aaf6e5219b7f981ec263df919098c6f\core-1.1.0\AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.1.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3aaf6e5219b7f981ec263df919098c6f\core-1.1.0\AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:11:9-43
+31-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:11:9-43
 32        android:label="kmutt_news" >
-32-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:10:9-35
+32-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:10:9-35
 33        <activity
-33-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:12:9-40:20
+33-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:12:9-40:20
 34            android:name="com.example.kmutt_news.MainActivity"
-34-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:13:13-41
+34-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:13:13-41
 35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:16:13-163
+35-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:16:13-163
 36            android:hardwareAccelerated="true"
-36-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:17:13-47
+36-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:17:13-47
 37            android:launchMode="singleTop"
-37-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:14:13-43
+37-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:14:13-43
 38            android:theme="@style/LaunchTheme"
-38-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:15:13-47
+38-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:15:13-47
 39            android:windowSoftInputMode="adjustResize" >
-39-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:18:13-55
+39-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:18:13-55
 40
 41            <!--
 42                 Specifies an Android theme to apply to this Activity as soon as
@@ -69,11 +69,11 @@
 45                 to determine the Window background behind the Flutter UI.
 46            -->
 47            <meta-data
-47-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:23:13-26:17
+47-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:23:13-26:17
 48                android:name="io.flutter.embedding.android.NormalTheme"
-48-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:24:15-70
+48-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:24:15-70
 49                android:resource="@style/NormalTheme" />
-49-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:25:15-52
+49-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:25:15-52
 50            <!--
 51                 Displays an Android View that continues showing the launch screen
 52                 Drawable until Flutter paints its first frame, then this splash
@@ -82,21 +82,21 @@
 55                 Flutter's first frame.
 56            -->
 57            <meta-data
-57-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:32:13-35:17
+57-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:32:13-35:17
 58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-58-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:33:15-79
+58-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:33:15-79
 59                android:resource="@drawable/launch_background" />
-59-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:34:15-61
+59-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:34:15-61
 60
 61            <intent-filter>
-61-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:36:13-39:29
+61-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:36:13-39:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:37:17-68
-62-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:37:25-66
+62-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:37:17-68
+62-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:37:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:38:17-76
-64-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:38:27-74
+64-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:38:17-76
+64-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:38:27-74
 65            </intent-filter>
 66        </activity>
 67        <!--
@@ -104,125 +104,125 @@
 69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 70        -->
 71        <meta-data
-71-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:43:9-45:33
+71-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:43:9-45:33
 72            android:name="flutterEmbedding"
-72-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:44:13-44
+72-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:44:13-44
 73            android:value="2" />
-73-->C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:45:13-30
+73-->C:\Users\ACER\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:45:13-30
 74
-75        <service
-75-->[:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
-77            android:directBootAware="true"
-77-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-78            android:exported="false" >
-78-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:29:13-37
-79            <meta-data
-79-->[:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-80-->[:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-82            <meta-data
-82-->[:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-83-->[:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-85            <meta-data
-85-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
-86                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-86-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
-88            <meta-data
-88-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
-89                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-89-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
-90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
-91            <meta-data
-91-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
-92                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-92-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:21:17-111
-93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:22:17-82
-94        </service>
-95
-96        <provider
-96-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
-97            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-97-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
-98            android:authorities="com.example.kmutt_news.flutter.image_provider"
-98-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
-99            android:exported="false"
-99-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
-100            android:grantUriPermissions="true" >
-100-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+75        <provider
+75-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+76            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+76-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+77            android:authorities="com.example.kmutt_news.flutter.image_provider"
+77-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+78            android:exported="false"
+78-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+79            android:grantUriPermissions="true" >
+79-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+80            <meta-data
+80-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+82                android:resource="@xml/flutter_image_picker_file_paths" />
+82-->[:image_picker] C:\Users\ACER\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+83        </provider>
+84
+85        <service
+85-->[:cloud_firestore] C:\Users\ACER\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+86            android:name="com.google.firebase.components.ComponentDiscoveryService"
+86-->[:cloud_firestore] C:\Users\ACER\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+87            android:directBootAware="true"
+87-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\70fe5cda33be5af9404d2de317248a02\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+88            android:exported="false" >
+88-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:29:13-37
+89            <meta-data
+89-->[:cloud_firestore] C:\Users\ACER\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+90-->[:cloud_firestore] C:\Users\ACER\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:cloud_firestore] C:\Users\ACER\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+92            <meta-data
+92-->[:firebase_core] C:\Users\ACER\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+93-->[:firebase_core] C:\Users\ACER\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_core] C:\Users\ACER\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+95            <meta-data
+95-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
+96                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+96-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+99                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+99-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
 101            <meta-data
-101-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
-102                android:name="android.support.FILE_PROVIDER_PATHS"
-102-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
-103                android:resource="@xml/flutter_image_picker_file_paths" />
-103-->[:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
-104        </provider>
+101-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\86001868e82fb8a537731fc530744833\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
+102                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+102-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\86001868e82fb8a537731fc530744833\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:21:17-111
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\86001868e82fb8a537731fc530744833\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:22:17-82
+104        </service>
 105
 106        <receiver
-106-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
+106-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
 107            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-107-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
+107-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
 108            android:enabled="true"
-108-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
+108-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
 109            android:exported="false" >
-109-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
+109-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
 110        </receiver>
 111
 112        <service
-112-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
+112-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
 113            android:name="com.google.android.gms.measurement.AppMeasurementService"
-113-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
+113-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
 114            android:enabled="true"
-114-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
+114-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
 115            android:exported="false" />
-115-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
+115-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
 116        <service
-116-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
+116-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
 117            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-117-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
+117-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
 118            android:enabled="true"
-118-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
+118-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
 119            android:exported="false"
-119-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
+119-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
 120            android:permission="android.permission.BIND_JOB_SERVICE" />
-120-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
+120-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\e9973ab53e0e0ab3a5a85762e8cae3ab\play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
 121
 122        <provider
-122-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+122-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\70fe5cda33be5af9404d2de317248a02\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
 123            android:name="com.google.firebase.provider.FirebaseInitProvider"
-123-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+123-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\70fe5cda33be5af9404d2de317248a02\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
 124            android:authorities="com.example.kmutt_news.firebaseinitprovider"
-124-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+124-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\70fe5cda33be5af9404d2de317248a02\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
 125            android:exported="false"
-125-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+125-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\70fe5cda33be5af9404d2de317248a02\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
 126            android:initOrder="100" />
-126-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+126-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\70fe5cda33be5af9404d2de317248a02\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
 127
 128        <activity
-128-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+128-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-129-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+129-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 130            android:exported="false"
-130-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+130-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-131-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+131-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\4c0b774c09d5393feb013f0dbe753af3\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 132
 133        <meta-data
-133-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\0d206dd6e3cd4812bc2585721426dde4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+133-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3aead0787ae2894d2ace9fbfe8eef769\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 134            android:name="com.google.android.gms.version"
-134-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\0d206dd6e3cd4812bc2585721426dde4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+134-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3aead0787ae2894d2ace9fbfe8eef769\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 135            android:value="@integer/google_play_services_version" />
-135-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\0d206dd6e3cd4812bc2585721426dde4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+135-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ACER\.gradle\caches\transforms-2\files-2.1\3aead0787ae2894d2ace9fbfe8eef769\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 136    </application>
 137
 138</manifest>
