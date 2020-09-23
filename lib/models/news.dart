@@ -27,13 +27,13 @@ List<News> latestList = [
   News(
     author: "data",
     estimate: "3",
-    category: "Tech",
+    category: "Education",
     favorite: "21",
     seen: "40.2k",
     time: "8 Hour",
     title: "มาแล้วว #TCAS64 ",
     image:
-        "https://www.facebook.com/KMUTT2ADMISSION/photos/a.752196398135926/3444673432221529/",
+        "https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/119972225_3444673435554862_6852552939350730206_o.png?_nc_cat=110&_nc_sid=730e14&_nc_ohc=NI3FTpcLN1kAX-3YCMI&_nc_ht=scontent.fbkk10-1.fna&oh=7824f80fbe24d83a493db639df1849c8&oe=5F90A7D9",
     subtitle:
         "กำหนดการรับสมัครนักศึกษาระดับปริญญาตรี ปีการศึกษา 2564 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
     content:
