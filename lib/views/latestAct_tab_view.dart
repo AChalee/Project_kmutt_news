@@ -5,7 +5,7 @@ import 'package:kmutt_news/views/read_news_view.dart';
 import 'package:kmutt_news/widgets/primary_card.dart';
 import 'package:kmutt_news/widgets/secondary_card.dart';
 
-class LatestNewsTabView extends StatelessWidget {
+class LatestActTabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
