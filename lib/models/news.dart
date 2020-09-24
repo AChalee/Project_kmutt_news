@@ -114,7 +114,7 @@ List<News> trendingList = [
     time: "8 Hour",
     title: "มาแล้วว #TCAS64 ",
     image:
-        "https://www.facebook.com/KMUTT2ADMISSION/photos/a.752196398135926/3444673432221529/",
+        "https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/119972225_3444673435554862_6852552939350730206_o.png?_nc_cat=110&_nc_sid=730e14&_nc_ohc=YBUmabarh2gAX-mDoo2&_nc_ht=scontent.fbkk10-1.fna&oh=0a443d1e6bd674fe8b8a8e6f32ce8f21&oe=5F90A7D9",
     subtitle:
         "กำหนดการรับสมัครนักศึกษาระดับปริญญาตรี ปีการศึกษา 2564 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
     content:

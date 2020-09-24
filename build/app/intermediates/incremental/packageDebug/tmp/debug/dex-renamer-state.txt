@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Wed Sep 23 22:07:46 ICT 2020
-=======
-#Tue Sep 22 01:53:43 ICT 2020
->>>>>>> develop
+#Fri Sep 25 01:27:34 ICT 2020
 base.2=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex

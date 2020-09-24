@@ -24,6 +24,7 @@ class SecondaryCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12.0),
               image: DecorationImage(
+                // ----------------------------------------------เรียกรูปมาแสดง----------------------------------------------
                 image: NetworkImage(news.image),
                 fit: BoxFit.cover,
               ),
@@ -39,6 +40,7 @@ class SecondaryCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
+                    // -----------------------------เรียก title------------------------------------
                     news.title,
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
