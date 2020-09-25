@@ -1,10 +1,10 @@
-#Tue Sep 22 00:06:18 ICT 2020
-base.2=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
+#Fri Sep 25 22:44:14 ICT 2020
 path.2=classes3.dex
-base.1=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
 path.1=classes2.dex
-base.0=C\:\\Users\\anann\\Documents\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-path.0=classes.dex
+base.2=C\:\\Users\\ACER\\Downloads\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
+base.1=C\:\\Users\\ACER\\Downloads\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
+base.0=C\:\\Users\\ACER\\Downloads\\Project_kmutt_news\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
