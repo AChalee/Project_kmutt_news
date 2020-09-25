@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:kmutt_news/constants.dart';
+import 'package:kmutt_news/widgets/category_card.dart';
+// import 'package:kmutt_news/constants.dart';
 // import 'package:image/image.dart';
 
 class AddMore extends StatefulWidget {
@@ -23,70 +27,32 @@ class _AddMoreState extends State<AddMore> {
                 fontStyle: FontStyle.italic),
           ),
         ),
-        body: GridView.count(
-          crossAxisCount: 2,
-          children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
+        body: Container(
+          padding: EdgeInsets.all(40),
+          child: GridView.count(
+            crossAxisCount: 2,
+            childAspectRatio: .85,
+            crossAxisSpacing: 20,
+            mainAxisSpacing: 50,
+            children: <Widget>[
+              CategoryCard(
+                title: "Login",
+                imageSrc: "assets/icons/password.png",
               ),
-            )
-          ],
+              CategoryCard(
+                title: "Save",
+                imageSrc: "assets/icons/bookmark.png",
+              ),
+              CategoryCard(
+                title: "Public \n Relations",
+                imageSrc: "assets/icons/speaker.png",
+              ),
+              CategoryCard(
+                title: "Setting",
+                imageSrc: "assets/icons/gear.png",
+              ),
+            ],
+          ),
         ));
   }
 }
-
-// class Entry {
-//   Entry(this.title, [this.children = const <Entry>[]]);
-
-//   final String title;
-//   final List<Entry> children;
-// }
-
-// final List<Entry> data = <Entry>[
-//   Entry(
-//     'คณะ',
-//     <Entry>[
-//       Entry(
-//         'วิศวกรรมศาสตร์',
-//         <Entry>[
-//           Entry('วิศวกรรมเครื่องกล'),
-//         ],
-//       ),
-//       Entry('วิทยาศาสตร์'),
-//       Entry('ครุศาสตร์อุุตสาหกรรมและเทคโนดลยี'),
-//       Entry('โครงการร่วมบริหารหลักสูตรมีเดียอาร์ตและเทคโนโลยี'),
-//       Entry('เทคดนโลยีสารสนเทศ'),
-//       Entry('สถาปัตยกรรมศาสตร์และการออกแบบ'),
-//       Entry('สถาบันวิทยาการหุ่นยนต์ภาคสนาม'),
-//       Entry('วิทยาลัยสหวิทยาการ'),
-//     ],
-//   ),
-//   Entry('ชั้นปี'),
-//   Entry(
-//     'อื่นๆ',
-//     <Entry>[
-//       Entry('ปริญญาโท'),
-//       Entry('ปริญญาเอก'),
-//     ],
-//   ),
-// ];
-
-// class EntryItem extends StatelessWidget {
-//   const EntryItem(this.entry);
-//   final Entry entry;
-
-//   Widget _buildTiles(Entry root) {
-//     if (root.children.isEmpty) return ListTile(title: Text(root.title));
-//     return ExpansionTile(
-//       key: PageStorageKey<Entry>(root),
-//       title: Text(root.title),
-//       children: root.children.map(_buildTiles).toList(),
-//     );
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return _buildTiles(entry);
-//   }
-// }
