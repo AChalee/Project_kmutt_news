@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-
+//import 'package:firebase_storage/firebase_storage.dart';
+//import 'package:firebase_core/firebase_core.dart';
 import 'launcher.dart';
+
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
+//   runApp(MyApp());
+// }
 
 void main() => runApp(MyApp());
 
