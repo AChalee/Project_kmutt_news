@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
+//import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 //import 'package:newlaundry/widgets/pickimage.dart';
 import 'dart:io';
@@ -107,7 +107,7 @@ class AddDataState extends State<AddData> {
                           (url) => new InkWell(
                             child: Image.file(url, height: 100, width: 100),
                             onTap: () {
-                              var index = imageFiles.indexOf(url);
+                              // var index = imageFiles.indexOf(url);
                               //     _settingModalBottomSheet(context, index);
                             },
                           ),
