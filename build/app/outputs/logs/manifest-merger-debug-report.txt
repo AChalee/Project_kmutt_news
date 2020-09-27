@@ -5,6 +5,7 @@ INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\A
 INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:1:1-47:12
 INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:1:1-47:12
 MERGED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:1:1-47:12
+MERGED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:image_picker] C:\Users\anann\Documents\Project_kmutt_news\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
@@ -22,6 +23,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:
 MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\77bb8c5dc66f5d23d5181402d1918c2e\play-services-measurement-base-17.5.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\646fcaf19234d7b37b884114aa567eb2\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\ff98db406dde5e0ef3217700c1c8d1dd\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
@@ -70,6 +72,8 @@ INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\debug\
 		ADDED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml:8:5-46:19
+MERGED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
@@ -96,6 +100,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\anann\.
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\646fcaf19234d7b37b884114aa567eb2\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\ff98db406dde5e0ef3217700c1c8d1dd\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
@@ -168,6 +174,8 @@ uses-sdk
 INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\main\AndroidManifest.xml
+MERGED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -202,6 +210,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\anann\.
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\646fcaf19234d7b37b884114aa567eb2\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\ff98db406dde5e0ef3217700c1c8d1dd\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
@@ -280,18 +290,24 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\5f2682a3b0bc0bcbaeae6897b083d2cb\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:14:5-67
 	android:name
 		ADDED from C:\Users\anann\Documents\Project_kmutt_news\android\app\src\debug\AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\d751e1e5368e6ac07484e7b258ca1942\play-services-measurement-api-17.5.0\AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:14:9-20:19
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
@@ -303,7 +319,13 @@ MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\388b60b496854fe0dc868b0de2e1a1ac\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_storage] C:\Users\anann\Documents\Project_kmutt_news\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
 ADDED from [:cloud_firestore] C:\Users\anann\Documents\Project_kmutt_news\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
@@ -350,6 +372,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\5f2682a3b0bc0bcbaeae6897b083d2cb\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:13:5-79
 MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\34268753bded0b91ecc4a1af1815ce82\grpc-android-1.21.0\AndroidManifest.xml:11:5-79
@@ -410,6 +434,12 @@ ADDED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.g
 		ADDED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\a6beb7a08bb153d99f4a6b1869466e43\firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\3ed8519e9abe4e7cb39c076a2d2afc20\firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:21.4.3] C:\Users\anann\.gradle\caches\transforms-2\files-2.1\09b92109551e6fe70caf570bb12f2a5c\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
 	android:value

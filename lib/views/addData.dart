@@ -1,11 +1,13 @@
-import 'dart:core';
-//import 'dart:html';
-//import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/material.dart';
-//import 'package:image_picker/image_picker.dart';
 //import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+//import 'package:newlaundry/widgets/pickimage.dart';
+import 'dart:io';
+import 'dart:math';
+import 'dart:async';
+//import 'package:path/path.dart' as Path;
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AddData extends StatefulWidget {
   @override
@@ -13,214 +15,78 @@ class AddData extends StatefulWidget {
 }
 
 class AddDataState extends State<AddData> {
-  //File file;
+  File imageFile, file;
   String topic, detail, urlPicture;
 
-  //Method
-
-//รูปไม่มา
-  Widget showImage() {
-    return Container(
-      padding: EdgeInsets.all(20.0),
-      //color: Colors.pink,
-      width: MediaQuery.of(context).size.width * 0.2, //ใช้ความยาวของจอ = รูปภาพ
-      height: MediaQuery.of(context).size.height * 0.2,
-      child: Image.asset('image/addImage.png'),
-    );
-  }
-
-  Widget cameraButton() {
-    return IconButton(
-      icon: Icon(
-        Icons.add_a_photo,
-        size: 36.0,
-        color: Colors.pink,
-      ),
-      onPressed: () {
-        //   chooseImage(ImageSource.camera);
-      },
-    );
-  }
-
-//กล้องถ่ายรูป             //ถ้ากดกล้อง มันจะ call หาตัวนี้
-  // Future<void> chooseImage(ImageSource imageSource) async {
-  //   try {
-  //     var object = await ImagePicker.pickImage(
-  //       source: imageSource,
-  //       maxWidth: 800.0,
-  //       maxHeight: 800.0,
-  //     );
-
-  //     setState(() {
-  //       file = object;
-  //     });
-  //   } catch (e) {}
-  // }
-
-  Widget galleryButton() {
-    return IconButton(
-      icon: Icon(
-        Icons.add_photo_alternate,
-        size: 36.0,
-        color: Colors.red,
-      ),
-      onPressed: () {
-        //   chooseImage(ImageSource.gallery)
-      },
-    );
-  }
-
-  Widget showButton() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: <Widget>[
-        cameraButton(),
-        galleryButton(),
-      ],
-    );
-  }
-
-  Widget topicForm() {
-    return Container(
-      //width: MediaQuery.of(context).size.width * 0.5,
-      child: TextField(
-        onChanged: (value) {
-          detail = value.trim();
-        },
-        decoration: InputDecoration(
-            helperText: 'ใจความสำคัญข่าว', //ข้างใต้ฟอม
-            labelText: 'หัวข้อข่าว'),
-      ),
-    );
-  }
-  // maxLength: 10,
-
-  Widget detailForm() {
-    return Container(
-      //width: MediaQuery.of(context).size.width * 0.5,
-      child: TextField(
-        onChanged: (String string) {
-          topic = string.trim(); //ตัดช่องว่างหน้าหลัง
-        },
-        decoration: InputDecoration(
-            helperText: 'รายละเอียดของข่าว', //ข้างใต้ฟอม
-            labelText: 'รายละเอียด'),
-      ),
-    );
-  }
-
-  Widget uploadButton() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: <Widget>[
-        Container(
-          //width: MediaQuery.of(context).size.width,
-          child: RaisedButton.icon(
-            color: Colors.deepOrange,
-            onPressed: () {
-              insertinformation();
-              print('You click Upload');
-
-              // if (file == null) {
-              //   //เช๊คว่าเลือกรูปภ่าพยัง
-              //   showAlert(
-              //       'Non Choose Picture', 'Please Click Camera or Gallery');
-              // } else if (
-              // topic = null ||
-              // topic.isEmty ||
-              // detail = null ||
-              // detail.isEmty) {
-              //   showAlert('Have Space', 'Please Fill Every Blank');
-              // }else{
-              //  uploadPictureToStorage();   // ถ้าทุกอย่างครบหมด กดอัพโหลด จะ call เรียก uploadPictureToStorage();
-              // }
-            },
-            icon: Icon(
-              Icons.cloud_upload,
-              color: Colors.white,
-            ),
-            label: Text(
-              'Upload Data to firebase',
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-//////////////////////////////FirebaseStrorage/////////////////////////////
-  // Future<void> uploadPictureToStorage() async{
-  //   Random random = Random();
-  //   int i = random.nextInt(10000);
-
-  //   //สร้าง instant ไป call เรียก
-  //   FirebaseStorage firebaseStorage = FirebaseStorage.instance;
-  //   StorageReference storageReference = firebaseStorage.ref().child('NewsPhoto/i.jpg') ;// บอกว่าเก็บรูปภาพที่ไหน //มันจะทำการอ้างอิงถึงที่เก็บรูป
-  //   StorageUploadTask storageUploadTask = storageReference.putFile(file);
-
-  //   urlPicture = await (await storageUploadTask.onComplete).ref.getDownloadURL();
-  //   print('urlPicture = $urlPicture');
-  // }
-
-////////////////////////////////Firestore firestore/////////////////////////////////
-  Future<void> insertinformation() async {
+  var imageFiles = [];
+  _openGallary(BuildContext context) async {
     // ignore: deprecated_member_use
-    Firestore firestore = Firestore.instance;
-    //Firestore firestore = Firestore.instance;
-
-    Map<String, dynamic> map = Map();
-    map['Topic'] = topic;
-    map['Detail'] = detail;
-    //map['urlPicture'] = urlPicture;
-    //await Firestore.initializeApp();
-    // ignore: deprecated_member_use
-    await firestore.collection('Posts').document().setData(map).then((value) {
-      print('insert Succes');
+    var picture = await ImagePicker.pickImage(source: ImageSource.gallery);
+    this.setState(() {
+      imageFile = picture;
     });
+    Navigator.of(context).pop();
   }
 
-//ทำงานก็ต่อเมื่อมันมี null เกิดขึ้น
-  // Future<void> showAlert(String title, String message) async {
-  //   showDialog(
-  //       context: context,
-  //       builder: (BuildContext context) {
-  //         return AlertDialog(
-  //           title: Text(title),
-  //           content: Text(message),
-  //           actions: <Widget>[
-  //             FlatButton(
-  //               onPressed: () {
-  //                 Navigator.of(context).pop();
-  //               },
-  //               child: Text('OK'),
-  //             ),
-  //           ],
-  //         );
-  //       });
+  _openCamera(ImageSource imageSource) async {
+    // ignore: deprecated_member_use
+    var picture = await ImagePicker.pickImage(source: imageSource);
+    setState(() {
+      imageFile = picture;
+      this.imageFiles.add(picture);
+    });
+    Navigator.of(context).pop();
+  }
 
-// Widget showContent() {
-//   ////รวบรวม widget ต่างๆ โดยมันเรียงจากบนลงล่าง ใช้Column
-//   return Column(
-//     children: <Widget>[
-//       showImage(),
-//       showButton(),
-//       topicForm(),
-//       detailForm(),
-//     ],
-//   );
-// }
-
-// Widget signOutButton(){
-//   return IconButton(
-//     icon: Icon(Icons.exit_to_app),
-//     tooltip:'Sign Out',
-//     onPressed: (){
-//       myAlert();
-//     }
-//     )
-
-// }
+  Future<void> _showChoiceDialog(BuildContext context) {
+    return showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text(
+              'ดำเนินการ',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontFamily: 'Prompt',
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700),
+            ),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: <Widget>[
+                  GestureDetector(
+                    child: Text(
+                      'รูปภาพ',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Prompt',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300),
+                    ),
+                    onTap: () {
+                      _openGallary(context);
+                    },
+                  ),
+                  Padding(padding: EdgeInsets.all(8)),
+                  GestureDetector(
+                    child: Text(
+                      'กล้องถ่ายรูป',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Prompt',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300),
+                    ),
+                    onTap: () {
+                      _openCamera(ImageSource.camera);
+                    },
+                  )
+                ],
+              ),
+            ),
+          );
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -228,16 +94,253 @@ class AddDataState extends State<AddData> {
       appBar: AppBar(
         title: Text('Post'),
       ),
-      body: Container(
-          child: Column(
-        children: [
-          showImage(),
-          showButton(),
-          topicForm(),
-          detailForm(),
-          uploadButton(),
+      backgroundColor: Colors.deepOrange[100],
+      body: ListView(
+        children: <Widget>[
+          SizedBox(height: 30, width: 30),
+          Container(
+            padding: EdgeInsets.only(left: 30),
+            alignment: Alignment.topLeft,
+            child: Row(
+              children: [
+                Row(
+                    children: imageFiles
+                        .map(
+                          (url) => new InkWell(
+                            child: Image.file(url, height: 100, width: 100),
+                            onTap: () {
+                              // var index = imageFiles.indexOf(url);
+                              //     _settingModalBottomSheet(context, index);
+                            },
+                          ),
+                        )
+                        .toList()),
+                Column(
+                  children: [
+                    InkWell(
+                      child: Image.asset('image/addImage.png',
+                          alignment: Alignment.center, height: 90, width: 90),
+                      onTap: () {
+                        if (imageFiles.length > 0) {
+                          print(imageFiles);
+                        } else {
+                          _showChoiceDialog(context);
+                        }
+                      },
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ), // finish PickImage part
+// this part input infor store
+          SizedBox(height: 30, width: 30),
+          Container(
+            padding: EdgeInsets.only(left: 30, right: 30),
+            child: Column(
+              children: [
+                TextField(
+                  onChanged: (String string) {
+                    topic = string.trim();
+                    print('insert topic done');
+                  },
+                  maxLines: null,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Topic',
+                    labelStyle: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Prompt',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400),
+                    prefixIcon: Icon(
+                      Icons.shopping_basket,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(height: 30, width: 30),
+          Container(
+            padding: EdgeInsets.only(left: 30, right: 30),
+            child: Column(
+              children: [
+                TextField(
+                  onChanged: (String string) {
+                    detail = string.trim();
+                    print('insert detail done');
+                  },
+                  maxLines: null,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Detaill',
+                    labelStyle: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Prompt',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400),
+                    prefixIcon: Icon(
+                      Icons.phone_iphone,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(height: 100),
+          Container(
+            padding: EdgeInsets.only(left: 30, right: 30),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      width: 120,
+                      height: 50,
+                      child: RaisedButton(
+                        onPressed: () {},
+                        padding: EdgeInsets.all(10),
+                        color: Colors.redAccent,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Text(
+                          'แก้ไข',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Prompt',
+                              fontSize: 18,
+                              fontWeight: FontWeight.w300),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 30),
+                Column(
+                  children: [
+                    Container(
+                      width: 120,
+                      height: 50,
+                      child: RaisedButton(
+                        onPressed: () {
+                          //print('!!!! object is done !!!!');
+                          uploadPicToStorage();
+
+                          //picimage.currentState.uploadPicToStorage();
+                          //uploae();
+                        },
+                        padding: EdgeInsets.all(10),
+                        color: Colors.redAccent,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Text(
+                          'บันทึกข้อมูล',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Prompt',
+                              fontSize: 18,
+                              fontWeight: FontWeight.w300),
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
         ],
-      )),
+      ),
     );
   }
+
+  // void _settingModalBottomSheet(context, index) {
+  //   print(index);
+  //   showModalBottomSheet(
+  //       context: context,
+  //       builder: (BuildContext bc) {
+  //         return Container(
+  //           child: new Wrap(
+  //             children: <Widget>[
+  //               new ListTile(
+  //                   leading: new Icon(Icons.remove_red_eye),
+  //                   title: new Text(
+  //                     'ดู',
+  //                     style: TextStyle(
+  //                         color: Colors.black,
+  //                         fontFamily: 'Prompt',
+  //                         fontSize: 16,
+  //                         fontWeight: FontWeight.w300),
+  //                   ),
+  //                   onTap: () => {}),
+  //               new ListTile(
+  //                   leading: new Icon(Icons.remove_circle),
+  //                   title: new Text(
+  //                     'ลบ',
+  //                     style: TextStyle(
+  //                         color: Colors.black,
+  //                         fontFamily: 'Prompt',
+  //                         fontSize: 16,
+  //                         fontWeight: FontWeight.w300),
+  //                   ),
+  //                   onTap: () {
+  //                     setState(() {
+  //                       imageFiles.removeAt(index);
+  //                       Navigator.of(context).pop();
+  //                       deleteImage(urlPicture);
+  //                     });
+  //                   }),
+  //             ],
+  //           ),
+  //         );
+  //       });
+  // }
+
+  Future<void> uploadPicToStorage() async {
+    Random random = Random();
+    int i = random.nextInt(100000);
+
+    FirebaseStorage firebaseStorage = FirebaseStorage.instance;
+    StorageReference storageReference =
+        firebaseStorage.ref().child('NewsPhoto/NewPhoto$i.jpg');
+    StorageUploadTask storageUploadTask = storageReference.putFile(imageFile);
+
+    urlPicture =
+        await (await storageUploadTask.onComplete).ref.getDownloadURL();
+    print('urlPicture is = $urlPicture');
+    insertinformation();
+  }
+
+  Future<void> insertinformation() async {
+    // ignore: deprecated_member_use
+    final firestore = Firestore.instance;
+    // Firestore firestore = Firestore.instance;
+
+    Map<String, dynamic> map = Map();
+    map['Topic'] = topic;
+    map['Detail'] = detail;
+    map['urlPicture'] = urlPicture;
+    //await Firebase.initializeApp();
+    // ignore: deprecated_member_use
+    await firestore.collection('Posts').document().setData(map).then((value) {
+      print('insert Successfully');
+    });
+  }
+
+  // Future<void> deleteImage(String urlPicture) async {
+  //   var fileUrl = Uri.decodeFull(Path.basename(urlPicture))
+  //       .replaceAll(new RegExp(r'(\?alt).*'), '');
+
+  //   final StorageReference firebaseStorageRef =
+  //       FirebaseStorage.instance.ref().child(fileUrl);
+  //   await firebaseStorageRef.delete();
+  //   print('Successfully deleted $urlPicture from storage');
+  // }
 }

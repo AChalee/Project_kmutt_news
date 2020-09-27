@@ -7,71 +7,87 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: new Text(
-          'KMUTT NEWS',
-          style: TextStyle(
-              fontSize: 24,
-              fontFamily: 'Prompt',
-              color: Colors.white,
-              fontStyle: FontStyle.italic),
-        ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(
-              Icons.notifications,
-              color: Colors.white,
+      body: Container(
+        padding: EdgeInsets.only(top: 20),
+        width: double.infinity,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(begin: Alignment.topCenter, colors: [
+          Colors.orange[900],
+          Colors.orange[800],
+          Colors.orange[400]
+        ])),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                // crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'KMUTT NEWS',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Prompt',
+                        fontSize: 28,
+                        fontStyle: FontStyle.italic),
+                  ),
+                ],
+              ),
             ),
-            onPressed: () {},
-          ),
-          IconButton(
-            tooltip: 'Search',
-            icon: const Icon(
-              Icons.search,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              print('sreach');
-            },
-          ),
-        ],
-      ),
-      // -----------------------------------------Tabbar View----------------------------------------------------------
-      body: DefaultTabController(
-        length: 2,
-        child: Container(
-          child: Column(
-            children: <Widget>[
-              Container(
-                constraints: BoxConstraints.expand(height: 50),
-                child: TabBar(
-                  indicatorWeight: 3,
-                  indicatorColor: Colors.orange,
-                  labelColor: Colors.orange,
-                  unselectedLabelColor: Colors.grey,
-                  tabs: [
-                    Tab(
-                        child: Text('เข้าสู่ระบบ',
-                            style:
-                                TextStyle(fontSize: 17, fontFamily: 'Prompt'))),
-                    Tab(
-                        child: Text(
-                      'ลงทะเบียน',
-                      style: TextStyle(fontSize: 17, fontFamily: 'Prompt'),
-                    )),
-                  ],
+            // SizedBox(
+            //   height: 20,
+            // ),
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(60),
+                  topRight: Radius.circular(60),
                 ),
               ),
-              Expanded(
-                child: Container(
-                  child: TabBarView(children: [
-                    LoginTabView(),
-                    RegisterTabView(),
-                  ]),
-                ),
-              )
-            ],
-          ),
+              child: DefaultTabController(
+                  length: 2,
+                  child: Container(
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          constraints: BoxConstraints.expand(height: 50),
+                          child: TabBar(
+                              indicatorWeight: 3,
+                              indicatorColor: Colors.orange,
+                              labelColor: Colors.orange,
+                              unselectedLabelColor: Colors.grey,
+                              tabs: [
+                                Tab(
+                                    child: Text('เข้าสู่ระบบ',
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: 'Sansita'))),
+                                Tab(
+                                    child: Text('ลงทะเบียน',
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: 'Sansita'))),
+                              ]),
+                        ),
+                        Expanded(
+                            child: Container(
+                          child: TabBarView(children: [
+                            LoginTabView(),
+                            RegisterTabView(),
+                          ]),
+                        ))
+                      ],
+                    ),
+                  )),
+            ))
+          ],
         ),
       ),
     );
