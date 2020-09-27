@@ -60,27 +60,32 @@ class LoginTabView extends StatelessWidget {
             "Forget Password ?",
             style: TextStyle(color: Colors.orange),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          SizedBox(height: 10),
           Container(
-            height: 40,
-            margin: EdgeInsets.symmetric(horizontal: 80),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                color: Colors.orange[900]),
-            child: Center(
-              child: Text(
-                "Login",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
+            child: InkWell(
+                onTap: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Container(
+                    height: 40,
+                    margin: EdgeInsets.symmetric(horizontal: 80),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.orange[900]),
+                    child: Center(
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                )),
           ),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
           Text(
             "With your social media",
@@ -89,26 +94,33 @@ class LoginTabView extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              IconButton(
-                icon: Image.asset("assets/icons/facebook.png"),
-                onPressed: () {},
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Container(
+                  alignment: Alignment.center,
+                  height: 52,
+                  width: 52,
+                  decoration: BoxDecoration(
+                      color: Colors.white, shape: BoxShape.circle),
+                  child: Image.asset("assets/icons/facebook.png"),
+                ),
               ),
-            ],
-            // children: <Widget>[
-            //   Expanded(
-            //     child: Container(
-            //       height: 52,
-            //       width: 52,
-            //       decoration: BoxDecoration(
-            //           color: Colors.white, shape: BoxShape.circle),
-            //       child: Image.asset("assets/icons/password.png"),
-            //     ),
-            //   )
-            // ],
+            ),
           )
+          // children: <Widget>[
+          //   Expanded(
+          //     child: Container(
+          //       height: 52,
+          //       width: 52,
+          //       decoration: BoxDecoration(
+          //           color: Colors.white, shape: BoxShape.circle),
+          //       child: Image.asset("assets/icons/password.png"),
+          //     ),
+          //   )
+          // ],
         ],
       ),
     );
