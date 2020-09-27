@@ -33,10 +33,6 @@ class ReadNewsView extends StatelessWidget {
                     icon: Icons.favorite_border,
                     onTap: () {},
                   ),
-                  CircleButton(
-                    icon: Icons.save,
-                    onTap: () {},
-                  )
                 ],
               ),
             ),

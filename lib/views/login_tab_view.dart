@@ -101,8 +101,8 @@ class LoginTabView extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 child: Container(
                   alignment: Alignment.center,
-                  height: 52,
-                  width: 52,
+                  height: 50,
+                  width: 50,
                   decoration: BoxDecoration(
                       color: Colors.white, shape: BoxShape.circle),
                   child: Image.asset("assets/icons/facebook.png"),

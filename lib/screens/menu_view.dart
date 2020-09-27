@@ -50,7 +50,7 @@ class _AddMoreState extends State<AddMore> {
               ),
               CategoryCard(
                 title: "Save",
-                imageSrc: "assets/icons/bookmark.png",
+                imageSrc: "assets/icons/heart.png",
                 press: () {},
               ),
               CategoryCard(

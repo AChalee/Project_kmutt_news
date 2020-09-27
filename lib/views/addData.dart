@@ -352,6 +352,7 @@ class AddDataState extends State<AddData> {
     insertinformation();
   }
 
+// เอารูปจากไหน ????
   Future<void> insertinformation() async {
     print('เข้ามาใน insertinformation() ละ Topic = ' +
         topic +
