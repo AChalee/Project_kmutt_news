@@ -1,13 +1,16 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-//import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-//import 'package:newlaundry/widgets/pickimage.dart';
 import 'dart:io';
 import 'dart:math';
 import 'dart:async';
-//import 'package:path/path.dart' as Path;
+import 'package:path/path.dart' as Path;
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:flutter_form_bloc/flutter_form_bloc.dart';
+//import 'package:newlaundry/widgets/pickimage.dart';
 
 class AddData extends StatefulWidget {
   @override
@@ -16,20 +19,20 @@ class AddData extends StatefulWidget {
 
 class AddDataState extends State<AddData> {
   File imageFile, file;
-  String topic, detail, urlPicture;
+  String topic, detail, urlImage;
 
   var imageFiles = [];
+
   _openGallary(BuildContext context) async {
-    // ignore: deprecated_member_use
     var picture = await ImagePicker.pickImage(source: ImageSource.gallery);
     this.setState(() {
       imageFile = picture;
+      this.imageFiles.add(picture);
     });
     Navigator.of(context).pop();
   }
 
   _openCamera(ImageSource imageSource) async {
-    // ignore: deprecated_member_use
     var picture = await ImagePicker.pickImage(source: imageSource);
     setState(() {
       imageFile = picture;
@@ -97,8 +100,36 @@ class AddDataState extends State<AddData> {
       backgroundColor: Colors.deepOrange[100],
       body: ListView(
         children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(top: 15, left: 15),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                // IconButton(
+                //   icon: Icon(Icons.arrow_back_ios),
+                //   color: Colors.white,
+                //   onPressed: () {
+                //     Navigator.pop(context);
+                //   },
+                // ),
+              ],
+            ),
+          ),
+          // Container(
+          //   alignment: Alignment.topCenter,
+          //   child: Text(
+          //     'เพิ่มรายละเอียดร้าน',
+          //     style: TextStyle(
+          //         color: Colors.redAccent,
+          //         fontFamily: 'Prompt',
+          //         fontSize: 20,
+          //         fontWeight: FontWeight.bold),
+          //   ),
+          // ),
           SizedBox(height: 30, width: 30),
           Container(
+            // child: PickImage(),
+// this part PickImage
             padding: EdgeInsets.only(left: 30),
             alignment: Alignment.topLeft,
             child: Row(
@@ -109,8 +140,8 @@ class AddDataState extends State<AddData> {
                           (url) => new InkWell(
                             child: Image.file(url, height: 100, width: 100),
                             onTap: () {
-                              // var index = imageFiles.indexOf(url);
-                              //     _settingModalBottomSheet(context, index);
+                              var index = imageFiles.indexOf(url);
+                              _settingModalBottomSheet(context, index);
                             },
                           ),
                         )
@@ -119,7 +150,7 @@ class AddDataState extends State<AddData> {
                   children: [
                     InkWell(
                       child: Image.asset('image/addImage.png',
-                          alignment: Alignment.center, height: 90, width: 90),
+                          height: 90, width: 90),
                       onTap: () {
                         if (imageFiles.length > 0) {
                           print(imageFiles);
@@ -133,6 +164,9 @@ class AddDataState extends State<AddData> {
               ],
             ),
           ), // finish PickImage part
+
+// this part input infor store/ finish PickImage part
+
 // this part input infor store
           SizedBox(height: 30, width: 30),
           Container(
@@ -140,8 +174,8 @@ class AddDataState extends State<AddData> {
             child: Column(
               children: [
                 TextField(
-                  onChanged: (String string) {
-                    topic = string.trim();
+                  onChanged: (String value) {
+                    topic = value.trim();
                     print('insert topic done');
                   },
                   maxLines: null,
@@ -154,7 +188,7 @@ class AddDataState extends State<AddData> {
                         fontSize: 16,
                         fontWeight: FontWeight.w400),
                     prefixIcon: Icon(
-                      Icons.shopping_basket,
+                      Icons.data_usage,
                       color: Colors.black,
                     ),
                   ),
@@ -162,28 +196,27 @@ class AddDataState extends State<AddData> {
               ],
             ),
           ),
-
           SizedBox(height: 30, width: 30),
           Container(
             padding: EdgeInsets.only(left: 30, right: 30),
             child: Column(
               children: [
                 TextField(
-                  onChanged: (String string) {
-                    detail = string.trim();
+                  onChanged: (String value) {
+                    detail = value.trim();
                     print('insert detail done');
                   },
                   maxLines: null,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Detaill',
+                    labelText: 'Detail',
                     labelStyle: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Prompt',
                         fontSize: 16,
                         fontWeight: FontWeight.w400),
                     prefixIcon: Icon(
-                      Icons.phone_iphone,
+                      Icons.import_contacts,
                       color: Colors.black,
                     ),
                   ),
@@ -198,30 +231,30 @@ class AddDataState extends State<AddData> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Column(
-                  children: [
-                    Container(
-                      width: 120,
-                      height: 50,
-                      child: RaisedButton(
-                        onPressed: () {},
-                        padding: EdgeInsets.all(10),
-                        color: Colors.redAccent,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Text(
-                          'แก้ไข',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'Prompt',
-                              fontSize: 18,
-                              fontWeight: FontWeight.w300),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                // Column(
+                //   children: [
+                //     Container(
+                //       width: 120,
+                //       height: 50,
+                //       child: RaisedButton(
+                //         onPressed: () {},
+                //         padding: EdgeInsets.all(10),
+                //         color: Colors.redAccent,
+                //         elevation: 0,
+                //         shape: RoundedRectangleBorder(
+                //             borderRadius: BorderRadius.circular(30)),
+                //         child: Text(
+                //           'แก้ไข',
+                //           style: TextStyle(
+                //               color: Colors.white,
+                //               fontFamily: 'Prompt',
+                //               fontSize: 18,
+                //               fontWeight: FontWeight.w300),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
                 SizedBox(width: 30),
                 Column(
                   children: [
@@ -231,8 +264,9 @@ class AddDataState extends State<AddData> {
                       child: RaisedButton(
                         onPressed: () {
                           //print('!!!! object is done !!!!');
-                          uploadPicToStorage();
-
+                          print("เข้า firebase ไหมน้าาา");
+                          // uploadPicToStorage();
+                          insertinformation();
                           //picimage.currentState.uploadPicToStorage();
                           //uploae();
                         },
@@ -242,7 +276,7 @@ class AddDataState extends State<AddData> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                         child: Text(
-                          'บันทึกข้อมูล',
+                          'โพสต์',
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Prompt',
@@ -261,86 +295,94 @@ class AddDataState extends State<AddData> {
     );
   }
 
-  // void _settingModalBottomSheet(context, index) {
-  //   print(index);
-  //   showModalBottomSheet(
-  //       context: context,
-  //       builder: (BuildContext bc) {
-  //         return Container(
-  //           child: new Wrap(
-  //             children: <Widget>[
-  //               new ListTile(
-  //                   leading: new Icon(Icons.remove_red_eye),
-  //                   title: new Text(
-  //                     'ดู',
-  //                     style: TextStyle(
-  //                         color: Colors.black,
-  //                         fontFamily: 'Prompt',
-  //                         fontSize: 16,
-  //                         fontWeight: FontWeight.w300),
-  //                   ),
-  //                   onTap: () => {}),
-  //               new ListTile(
-  //                   leading: new Icon(Icons.remove_circle),
-  //                   title: new Text(
-  //                     'ลบ',
-  //                     style: TextStyle(
-  //                         color: Colors.black,
-  //                         fontFamily: 'Prompt',
-  //                         fontSize: 16,
-  //                         fontWeight: FontWeight.w300),
-  //                   ),
-  //                   onTap: () {
-  //                     setState(() {
-  //                       imageFiles.removeAt(index);
-  //                       Navigator.of(context).pop();
-  //                       deleteImage(urlPicture);
-  //                     });
-  //                   }),
-  //             ],
-  //           ),
-  //         );
-  //       });
-  // }
+  void _settingModalBottomSheet(context, index) {
+    print(index);
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext bc) {
+          return Container(
+            child: new Wrap(
+              children: <Widget>[
+                new ListTile(
+                    leading: new Icon(Icons.remove_red_eye),
+                    title: new Text(
+                      'ดู',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Prompt',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300),
+                    ),
+                    onTap: () => {}),
+                new ListTile(
+                    leading: new Icon(Icons.remove_circle),
+                    title: new Text(
+                      'ลบ',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Prompt',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300),
+                    ),
+                    onTap: () {
+                      setState(() {
+                        imageFiles.removeAt(index);
+                        Navigator.of(context).pop();
+                        deleteImage(urlImage);
+                      });
+                    }),
+              ],
+            ),
+          );
+        });
+  }
 
   Future<void> uploadPicToStorage() async {
+    print('ตอนนี้อยู่ใน uploadPicToStorage');
     Random random = Random();
     int i = random.nextInt(100000);
 
     FirebaseStorage firebaseStorage = FirebaseStorage.instance;
     StorageReference storageReference =
-        firebaseStorage.ref().child('NewsPhoto/NewPhoto$i.jpg');
+        firebaseStorage.ref().child('NewsPhoto/NewsPhoto$i.jpg');
     StorageUploadTask storageUploadTask = storageReference.putFile(imageFile);
 
-    urlPicture =
-        await (await storageUploadTask.onComplete).ref.getDownloadURL();
-    print('urlPicture is = $urlPicture');
+    urlImage = await (await storageUploadTask.onComplete).ref.getDownloadURL();
+    print('urlImage is = $urlImage');
     insertinformation();
   }
 
   Future<void> insertinformation() async {
-    // ignore: deprecated_member_use
+    print('เข้ามาใน insertinformation() ละ Topic = ' +
+        topic +
+        ' Detail = ' +
+        detail);
     final firestore = Firestore.instance;
-    // Firestore firestore = Firestore.instance;
+
+    //Firestore firestore = Firestore.instance;
 
     Map<String, dynamic> map = Map();
     map['Topic'] = topic;
     map['Detail'] = detail;
-    map['urlPicture'] = urlPicture;
-    //await Firebase.initializeApp();
-    // ignore: deprecated_member_use
-    await firestore.collection('Posts').document().setData(map).then((value) {
+    map['UrlImage'] = urlImage;
+    await Firebase.initializeApp();
+    await firestore
+        .collection('PostNews')
+        .document()
+        .setData(map)
+        .then((value) {
       print('insert Successfully');
     });
   }
 
-  // Future<void> deleteImage(String urlPicture) async {
-  //   var fileUrl = Uri.decodeFull(Path.basename(urlPicture))
-  //       .replaceAll(new RegExp(r'(\?alt).*'), '');
+  Future<void> deleteImage(String urlImage) async {
+    var fileUrl = Uri.decodeFull(Path.basename(urlImage))
+        .replaceAll(new RegExp(r'(\?alt).*'), '');
 
-  //   final StorageReference firebaseStorageRef =
-  //       FirebaseStorage.instance.ref().child(fileUrl);
-  //   await firebaseStorageRef.delete();
-  //   print('Successfully deleted $urlPicture from storage');
-  // }
+    final StorageReference firebaseStorageRef =
+        FirebaseStorage.instance.ref().child(fileUrl);
+    await firebaseStorageRef.delete();
+    print('Successfully deleted $urlImage from storage');
+  }
 }
+//}

@@ -91,9 +91,9 @@ class LoginTabView extends StatelessWidget {
             "With your social media",
             style: TextStyle(color: Colors.grey),
           ),
-          SizedBox(
-            height: 20,
-          ),
+          // SizedBox(
+          //   height: 20,
+          // ),
           Container(
             child: InkWell(
               onTap: () {},
