@@ -4,123 +4,96 @@ class LoginTabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(20),
       child: Column(
         children: <Widget>[
           SizedBox(
             height: 20,
           ),
           Container(
-            padding: EdgeInsets.only(left: 10),
+            padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                    color: Color.fromRGBO(225, 95, 27, .3),
-                    blurRadius: 20,
-                    offset: Offset(0, 10)),
-              ],
-            ),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromRGBO(225, 95, 27, 3),
+                    // blurRadius: 20,
+                    // offset: Offset(0, 10),
+                  )
+                ]),
             child: Column(
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.only(left: 20),
+                  // padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                       border:
                           Border(bottom: BorderSide(color: Colors.grey[200]))),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: "Username",
-                      hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
-                      border: InputBorder.none,
-                    ),
+                        hintText: "E-mail",
+                        hintStyle: TextStyle(color: Colors.grey),
+                        border: InputBorder.none),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 20),
+                  // padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                       border:
                           Border(bottom: BorderSide(color: Colors.grey[200]))),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: "Password",
-                      hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
-                      border: InputBorder.none,
-                    ),
+                        hintText: "Password ",
+                        hintStyle: TextStyle(color: Colors.grey),
+                        border: InputBorder.none),
                   ),
-                )
+                ),
               ],
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 40,
           ),
           Text(
-            "Forget Password ?",
-            style: TextStyle(color: Colors.orange),
-          ),
-          SizedBox(height: 10),
-          Container(
-            child: InkWell(
-                onTap: () {},
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Container(
-                    height: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 80),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        color: Colors.orange[900]),
-                    child: Center(
-                      child: Text(
-                        "Login",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  ),
-                )),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            "With your social media",
+            "Forgot Password?",
             style: TextStyle(color: Colors.grey),
           ),
-          // SizedBox(
-          //   height: 20,
-          // ),
+          SizedBox(
+            height: 40,
+          ),
           Container(
-            child: InkWell(
-              onTap: () {},
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      color: Colors.white, shape: BoxShape.circle),
-                  child: Image.asset("assets/icons/facebook.png"),
-                ),
+            height: 50,
+            margin: EdgeInsets.symmetric(horizontal: 50),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: Colors.orange[500],
+            ),
+            child: Center(
+              child: Text(
+                "LOGIN",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
               ),
             ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            "Continue with social media",
+            style: TextStyle(color: Colors.grey),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Container(
+            child: ImageIcon(
+              AssetImage("assets/icons/facebook.png"),
+              size: 50,
+            ),
           )
-          // children: <Widget>[
-          //   Expanded(
-          //     child: Container(
-          //       height: 52,
-          //       width: 52,
-          //       decoration: BoxDecoration(
-          //           color: Colors.white, shape: BoxShape.circle),
-          //       child: Image.asset("assets/icons/password.png"),
-          //     ),
-          //   )
-          // ],
         ],
       ),
     );

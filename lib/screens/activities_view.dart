@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kmutt_news/views/addData.dart';
+
 import 'package:kmutt_news/views/latestAct_tab_view.dart';
 import 'package:kmutt_news/views/trendingAct_tab_view.dart';
 

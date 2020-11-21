@@ -20,8 +20,21 @@ class AddData extends StatefulWidget {
 class AddDataState extends State<AddData> {
   File imageFile, file;
   String topic, detail, urlImage;
+  String faculty, branch;
 
   var imageFiles = [];
+
+  //////////////////////////
+  var selectedCategory, selectedType;
+  final GlobalKey<FormState> _formKeyValue = new GlobalKey<FormState>();
+  List<String> types = <String>['ข่าวสาร', 'กิจกรรม'];
+  List<String> categorys = <String>[
+    'ประกาศจากมหาวิทยาลัย',
+    'กิจกรรม Freshy',
+    'งานดนตรี',
+    'งานตลาด'
+  ];
+  /////////////////////////
 
   _openGallary(BuildContext context) async {
     var picture = await ImagePicker.pickImage(source: ImageSource.gallery);
@@ -115,17 +128,7 @@ class AddDataState extends State<AddData> {
               ],
             ),
           ),
-          // Container(
-          //   alignment: Alignment.topCenter,
-          //   child: Text(
-          //     'เพิ่มรายละเอียดร้าน',
-          //     style: TextStyle(
-          //         color: Colors.redAccent,
-          //         fontFamily: 'Prompt',
-          //         fontSize: 20,
-          //         fontWeight: FontWeight.bold),
-          //   ),
-          // ),
+
           SizedBox(height: 30, width: 30),
           Container(
             // child: PickImage(),
@@ -165,9 +168,6 @@ class AddDataState extends State<AddData> {
             ),
           ), // finish PickImage part
 
-// this part input infor store/ finish PickImage part
-
-// this part input infor store
           SizedBox(height: 30, width: 30),
           Container(
             padding: EdgeInsets.only(left: 30, right: 30),
@@ -181,7 +181,7 @@ class AddDataState extends State<AddData> {
                   maxLines: null,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Topic',
+                    labelText: 'หัวข้อข่าว',
                     labelStyle: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Prompt',
@@ -196,6 +196,7 @@ class AddDataState extends State<AddData> {
               ],
             ),
           ),
+
           SizedBox(height: 30, width: 30),
           Container(
             padding: EdgeInsets.only(left: 30, right: 30),
@@ -209,7 +210,7 @@ class AddDataState extends State<AddData> {
                   maxLines: null,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Detail',
+                    labelText: 'รายละเอียดข่าว',
                     labelStyle: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Prompt',
@@ -225,36 +226,70 @@ class AddDataState extends State<AddData> {
             ),
           ),
 
+          SizedBox(height: 30, width: 30),
+          Row(
+            //crossAxisAlignment: CrossAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(height: 30, width: 30),
+              DropdownButton(
+                items: types
+                    .map((value) => DropdownMenuItem(
+                          child: Text(
+                            value,
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          value: value,
+                        ))
+                    .toList(),
+                onChanged: (selectedAccountType) {
+                  print('$selectedAccountType');
+                  setState(() {
+                    selectedType = selectedAccountType;
+                  });
+                  print(selectedType);
+                },
+                value: selectedType,
+                isExpanded: false,
+                hint: Text(
+                  'ประเภท',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              SizedBox(height: 30, width: 30),
+              DropdownButton(
+                items: categorys
+                    .map((value) => DropdownMenuItem(
+                          child: Text(
+                            value,
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          value: value,
+                        ))
+                    .toList(),
+                onChanged: (selectedAccountCategorys) {
+                  print('$selectedAccountCategorys');
+                  setState(() {
+                    selectedCategory = selectedAccountCategorys;
+                  });
+                  print(selectedCategory);
+                },
+                value: selectedCategory,
+                isExpanded: false,
+                hint: Text(
+                  'หมวดหมู่',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ],
+          ),
+
           SizedBox(height: 100),
           Container(
             padding: EdgeInsets.only(left: 30, right: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Column(
-                //   children: [
-                //     Container(
-                //       width: 120,
-                //       height: 50,
-                //       child: RaisedButton(
-                //         onPressed: () {},
-                //         padding: EdgeInsets.all(10),
-                //         color: Colors.redAccent,
-                //         elevation: 0,
-                //         shape: RoundedRectangleBorder(
-                //             borderRadius: BorderRadius.circular(30)),
-                //         child: Text(
-                //           'แก้ไข',
-                //           style: TextStyle(
-                //               color: Colors.white,
-                //               fontFamily: 'Prompt',
-                //               fontSize: 18,
-                //               fontWeight: FontWeight.w300),
-                //         ),
-                //       ),
-                //     ),
-                //   ],
-                // ),
                 SizedBox(width: 30),
                 Column(
                   children: [
@@ -265,8 +300,9 @@ class AddDataState extends State<AddData> {
                         onPressed: () {
                           //print('!!!! object is done !!!!');
                           print("เข้า firebase ไหมน้าาา");
-                          // uploadPicToStorage();
+                          uploadPicToStorage();
                           insertinformation();
+                          print("ออก insertinformation");
                           //picimage.currentState.uploadPicToStorage();
                           //uploae();
                         },
@@ -354,10 +390,16 @@ class AddDataState extends State<AddData> {
 
 // เอารูปจากไหน ????
   Future<void> insertinformation() async {
-    print('เข้ามาใน insertinformation() ละ Topic = ' +
+    print('เข้ามาใน insertinformation() ละ  // ' +
         topic +
-        ' Detail = ' +
-        detail);
+        '  //  ' +
+        detail +
+        '  //  ' +
+        urlImage +
+        '  //  ' +
+        selectedType +
+        '  //  ' +
+        selectedCategory);
     final firestore = Firestore.instance;
 
     //Firestore firestore = Firestore.instance;
@@ -366,6 +408,8 @@ class AddDataState extends State<AddData> {
     map['Topic'] = topic;
     map['Detail'] = detail;
     map['UrlImage'] = urlImage;
+    map['Type'] = selectedType;
+    map['Category'] = selectedCategory;
     await Firebase.initializeApp();
     await firestore
         .collection('PostNews')

@@ -33,7 +33,7 @@ List<News> latestList = [
     time: "8 Hour",
     title: "มาแล้วว #TCAS64 ",
     image:
-        "https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/119972225_3444673435554862_6852552939350730206_o.png?_nc_cat=110&_nc_sid=730e14&_nc_ohc=NI3FTpcLN1kAX-3YCMI&_nc_ht=scontent.fbkk10-1.fna&oh=7824f80fbe24d83a493db639df1849c8&oe=5F90A7D9",
+        "https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/123502230_3636711906368103_2702468230875393499_o.png?_nc_cat=108&ccb=2&_nc_sid=730e14&_nc_ohc=PZMFQkDie30AX_Cz9Zh&_nc_ht=scontent.fbkk22-1.fna&oh=2ac02c92863f0cc4b2287591854da25d&oe=5FC3FFBD",
     subtitle:
         "กำหนดการรับสมัครนักศึกษาระดับปริญญาตรี ปีการศึกษา 2564 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
     content:

@@ -7,6 +7,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: Container(
         padding: EdgeInsets.only(top: 20),
         width: double.infinity,
@@ -21,7 +22,7 @@ class Login extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(30),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -36,9 +37,9 @@ class Login extends StatelessWidget {
                 ],
               ),
             ),
-            // SizedBox(
-            //   height: 20,
-            // ),
+            SizedBox(
+              height: 20,
+            ),
             Expanded(
                 child: Container(
               decoration: BoxDecoration(
@@ -78,7 +79,7 @@ class Login extends StatelessWidget {
                         ),
                         Expanded(
                             child: Container(
-                          child: TabBarView(children: [
+                          child: TabBarView(children: <Widget>[
                             LoginTabView(),
                             RegisterTabView(),
                           ]),

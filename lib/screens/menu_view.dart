@@ -29,40 +29,147 @@ class _AddMoreState extends State<AddMore> {
           ),
         ),
         body: Container(
-          padding: EdgeInsets.all(40),
+          padding: EdgeInsets.all(30),
           child: GridView.count(
             crossAxisCount: 2,
             childAspectRatio: .85,
             crossAxisSpacing: 20,
-            mainAxisSpacing: 50,
+            mainAxisSpacing: 40,
             children: <Widget>[
-              CategoryCard(
-                title: "Login",
-                imageSrc: "assets/icons/password.png",
-                press: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Login(),
+              Card(
+                margin: EdgeInsets.all(8.0),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Login(),
+                      ),
+                    );
+                  },
+                  splashColor: Colors.orange[500],
+                  child: Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ImageIcon(
+                          AssetImage("assets/icons/password.png"),
+                          size: 50.0,
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Login",
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
                     ),
-                  );
-                },
+                  ),
+                ),
               ),
-              CategoryCard(
-                title: "Save",
-                imageSrc: "assets/icons/heart.png",
-                press: () {},
+              Card(
+                margin: EdgeInsets.all(8.0),
+                child: InkWell(
+                  onTap: () {},
+                  splashColor: Colors.orange[500],
+                  child: Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ImageIcon(
+                          AssetImage("assets/icons/heart.png"),
+                          size: 50.0,
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Save",
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ),
-              CategoryCard(
-                title: "Public \n Relations",
-                imageSrc: "assets/icons/speaker.png",
-                press: () {},
+              Card(
+                margin: EdgeInsets.all(8.0),
+                child: InkWell(
+                  onTap: () {},
+                  splashColor: Colors.orange[500],
+                  child: Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ImageIcon(
+                          AssetImage("assets/icons/speaker.png"),
+                          size: 50.0,
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Public\nRelations",
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ),
-              CategoryCard(
-                title: "Setting",
-                imageSrc: "assets/icons/gear.png",
-                press: () {},
-              ),
+              Card(
+                margin: EdgeInsets.all(8.0),
+                child: InkWell(
+                  onTap: () {},
+                  splashColor: Colors.orange[500],
+                  child: Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ImageIcon(
+                          AssetImage("assets/icons/gear.png"),
+                          size: 50.0,
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Setting",
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              )
+              // CategoryCard(
+              //   title: "Login",
+              //   imageSrc: "assets/icons/password.png",
+              //   press: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => Login(),
+              //       ),
+              //     );
+              //   },
+              // ),
+              // CategoryCard(
+              //   title: "Save",
+              //   imageSrc: "assets/icons/heart.png",
+              //   press: () {},
+              // ),
+              // CategoryCard(
+              //   title: "Public\nRelations",
+              //   imageSrc: "assets/icons/speaker.png",
+              //   press: () {},
+              // ),
+              // CategoryCard(
+              //   title: "Setting",
+              //   imageSrc: "assets/icons/gear.png",
+              //   press: () {},
+              // ),
             ],
           ),
         ));
