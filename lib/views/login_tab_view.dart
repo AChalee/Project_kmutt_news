@@ -1,6 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class LoginTabView extends StatelessWidget {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -59,7 +62,7 @@ class LoginTabView extends StatelessWidget {
             style: TextStyle(color: Colors.grey),
           ),
           SizedBox(
-            height: 40,
+            height: 30,
           ),
           Container(
             height: 50,

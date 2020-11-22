@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kmutt_news/screens/login_view.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:kmutt_news/constants.dart';
-import 'package:kmutt_news/widgets/category_card.dart';
+//import 'package:kmutt_news/widgets/category_card.dart';
 // import 'package:kmutt_news/constants.dart';
 // import 'package:image/image.dart';
 
